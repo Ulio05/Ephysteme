@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Éphystème — Accompagner & Transformer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <svg class="logo-svg" viewBox="0 0 80 60" fill="none">
+      <path d="M10 15 Q10 5 20 5 Q30 5 30 15" stroke="#C8A84B" stroke-width="1.5" fill="none"/>
+      <path d="M10 45 Q10 55 20 55 Q30 55 30 45" stroke="#C8A84B" stroke-width="1.5" fill="none"/>
+    </svg>
+    <span class="logo-name">Éphystème</span>
+    <span class="logo-sub">Accompagner & Transformer</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#presentation">Présentation</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-admin-btn" onclick="openAdmin()"><i class="fa fa-lock" style="margin-right:6px; font-size:0.7rem;"></i>Admin</button>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="hero-tag">Cabinet de psychologie du travail</p>
+    <h1 class="hero-title">Analyser, <em>comprendre</em>, transformer</h1>
+    <p class="hero-text">
+      Le cabinet <strong>ÉPHYSTÈME</strong> mobilise plusieurs champs théoriques — droit, cliniques du travail, psychologie et sociologie — afin de produire des analyses fines des situations de travail.
+    </p>
+    <p class="hero-tagline">Éphystème : efficacité & système</p>
+    <a href="#contact" class="hero-cta">Prendre contact</a>
+  </div>
+  <div class="hero-img">
+    <div style="width:100%;height:100%;background:linear-gradient(160deg, #1A2B4A 0%, #2C4270 50%, #1A2B4A 100%); display:flex; align-items:center; justify-content:center;">
+      <span style="font-family:'Playfair Display',serif; font-size:6rem; color:rgba(200,168,75,0.12); font-style:italic; user-select:none;">É</span>
+    </div>
+    <div class="hero-img-overlay"></div>
+  </div>
+</section>
+
+<!-- PRÉSENTATION -->
+<section id="presentation" class="section-presentation">
+  <div>
+    <h2 class="section-title">Présentation</h2>
+    <p class="section-text">
+      Le cabinet <strong>ÉPHYSTÈME</strong> mobilise plusieurs champs théoriques comme le droit, les cliniques du travail, la psychologie et la sociologie du travail afin de produire des analyses fines des situations de travail que ce soit dans le cadre de consultations individuelles ou d'interventions au sein d'organisations du travail.
+    </p>
+    <p class="section-text">
+      Ce préalable permet d'aborder des situations de travail de façon systémique pour un accompagnement efficace soutenant leur transformation.
+    </p>
+    <a href="#contact" class="section-link">Prendre rendez-vous →</a>
+  </div>
+  <div style="display:flex;align-items:center;justify-content:center;height:420px;background:var(--marine);border-radius:2px;">
+    <span style="font-family:'Playfair Display',serif;font-size:8rem;color:rgba(200,168,75,0.15);font-style:italic;">É</span>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours" class="section-parcours">
+  <div style="display:flex;align-items:center;justify-content:center;width:240px;height:300px;background:var(--gris-clair);border-radius:2px;flex-shrink:0;">
+    <i class="fa fa-user" style="font-size:3rem;color:var(--gris);opacity:0.4;"></i>
+  </div>
+  <div>
+    <h2 class="section-title">Parcours</h2>
+    <p class="section-text">
+      Après une maîtrise en droit (M1) <strong>Danielle CARDIS</strong> est devenue ingénieur en informatique au sein d'une SSII en région parisienne. Cette expérience a été l'occasion d'amorcer une réflexion sur le sens du travail et le projet de construire un parcours professionnel en adéquation avec ses valeurs et ses projets personnels.
+    </p>
+    <p class="section-text">
+      Elle a profité d'un congé parental pour valider un Master 2 « chef de projet multimédia » (UGA-INP Grenoble) puis devenir enseignante.
+    </p>
+    <p class="section-text">
+      Une reprise d'étude en parallèle de son activité professionnelle (licence de psychologie à Lyon 2 puis master en psychologie du travail au Conservatoire des Arts et Métiers) lui a permis de valider le titre de psychologue. Depuis elle exerce le métier de psychologue du travail au sein du cabinet <strong>ÉPHYSTÈME</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="competences" class="section-competences">
+  <h2 class="section-title" style="color:var(--or);font-family:'Playfair Display',serif;">Compétences</h2>
+  <div class="competences-grid">
+    <div class="competence-item"><span class="comp-dot"></span>Consultations individuelles de souffrance au travail</div>
+    <div class="competence-item"><span class="comp-dot"></span>Bilan écrit d'évaluation de la souffrance individuelle au travail</div>
+    <div class="competence-item"><span class="comp-dot"></span>Élaboration de l'expérience professionnelle</div>
+    <div class="competence-item"><span class="comp-dot"></span>Développement professionnel</div>
+    <div class="competence-item"><span class="comp-dot"></span>Diagnostic psycho-organisationnel</div>
+    <div class="competence-item"><span class="comp-dot"></span>Accompagnement des équipes et du management en situation de crise</div>
+    <div class="competence-item"><span class="comp-dot"></span>Formations / Sensibilisations</div>
+    <div class="competence-item"><span class="comp-dot"></span>Analyse de la pratique professionnelle</div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="section-blog">
+  <div class="blog-header">
+    <h2 class="section-title" style="margin-bottom:0;">Blog</h2>
+    <a href="#blog" class="section-link">Tous les articles →</a>
+  </div>
+  <div class="blog-grid" id="blog-grid">
+    <div class="blog-empty">
+      <i class="fa fa-pen-nib" style="font-size:1.5rem;color:var(--or);display:block;margin-bottom:1rem;"></i>
+      Aucun article pour le moment.<br>
+      <span style="font-size:0.8rem;">Connectez-vous à l'administration pour publier votre premier article.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-contact">
+  <div>
+    <h2 class="contact-title">Prendre contact</h2>
+    <p class="contact-text">
+      Vous souhaitez en savoir plus sur les services proposés ou prendre rendez-vous ? N'hésitez pas à m'écrire.
+    </p>
+    <div class="contact-info">
+      <div class="contact-info-item"><i class="fa fa-envelope"></i>contact@ephysteme.fr</div>
+      <div class="contact-info-item"><i class="fa fa-phone"></i>+33 (0)6 XX XX XX XX</div>
+      <div class="contact-info-item"><i class="fa fa-map-marker-alt"></i>Grenoble, Rhône-Alpes</div>
+    </div>
+  </div>
+  <form class="contact-form" onsubmit="handleContact(event)">
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <input type="text" placeholder="Objet">
+    <textarea rows="5" placeholder="Votre message..."></textarea>
+    <button type="submit">Envoyer le message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Éphystème — Tous droits réservés</p>
+  <a href="#home">↑ Haut de page</a>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- ======= MODAL ADMIN ======= -->
+<div class="modal-overlay" id="adminModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Administration</h2>
+      <button class="modal-close" onclick="closeModal('adminModal')"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+
+      <!-- LOGIN -->
+      <div id="admin-login-panel">
+        <div class="admin-login">
+          <i class="fa fa-shield-alt" style="font-size:2rem;color:var(--or);display:block;margin-bottom:1rem;"></i>
+          <p>Accès réservé à l'administration du site.<br>Entrez le mot de passe pour continuer.</p>
+          <div class="login-row">
+            <input type="password" id="admin-pw" placeholder="Mot de passe" onkeydown="if(event.key==='Enter')checkLogin()">
+            <button class="btn btn-primary" onclick="checkLogin()">Entrer</button>
+          </div>
+          <p class="login-error" id="login-error" style="display:none;">Mot de passe incorrect.</p>
+          <p style="font-size:0.72rem;color:var(--gris);margin-top:1.5rem;">Mot de passe par défaut : <code>admin123</code></p>
+        </div>
+      </div>
+
+      <!-- DASHBOARD -->
+      <div id="admin-dashboard" style="display:none;">
+        <div class="admin-tabs">
+          <button class="admin-tab active" onclick="switchTab('articles')">Articles</button>
+          <button class="admin-tab" onclick="switchTab('new-article')">Nouvel article</button>
+          <button class="admin-tab" onclick="switchTab('settings')">Paramètres</button>
+        </div>
+
+        <!-- ARTICLES LIST -->
+        <div class="admin-panel active" id="tab-articles">
+          <div class="articles-list" id="admin-articles-list"></div>
+          <div style="text-align:right;">
+            <button class="btn btn-primary" onclick="switchTab('new-article')">+ Nouvel article</button>
+          </div>
+        </div>
+
+        <!-- NEW / EDIT ARTICLE -->
+        <div class="admin-panel" id="tab-new-article">
+          <input type="hidden" id="edit-id">
+          <div class="field">
+            <label>Titre de l'article</label>
+            <input type="text" id="art-title" placeholder="Mon titre d'article">
+          </div>
+          <div class="field">
+            <label>Image de couverture</label>
+            <div class="image-upload-area" onclick="document.getElementById('art-img-file').click()">
+              <input type="file" id="art-img-file" accept="image/*" onchange="previewImage(event)" style="display:none;">
+              <i class="fa fa-image" style="font-size:1.5rem;color:var(--or);display:block;margin-bottom:0.5rem;"></i>
+              <p>Cliquez pour ajouter une image<br><span>JPG, PNG, WEBP — max 5 Mo</span></p>
+            </div>
+            <img id="art-img-preview" class="image-preview-box" alt="Aperçu">
+            <input type="hidden" id="art-img-data">
+          </div>
+          <div class="field">
+            <label>Contenu (Markdown)</label>
+            <div class="markdown-editor">
+              <div class="md-pane">
+                <div class="md-pane-header">✍️ Éditeur</div>
+                <textarea id="art-content" placeholder="# Mon titre&#10;&#10;Écrivez votre article en **Markdown**..." oninput="updatePreview()"></textarea>
+              </div>
+              <div class="md-pane">
+                <div class="md-pane-header">👁 Aperçu</div>
+                <div class="md-preview" id="art-preview"><em style="color:var(--gris)">L'aperçu s'affiche ici…</em></div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn-secondary" onclick="cancelEdit()">Annuler</button>
+            <button class="btn btn-primary" onclick="saveArticle()"><i class="fa fa-save" style="margin-right:6px;"></i>Publier l'article</button>
+          </div>
+        </div>
+
+        <!-- SETTINGS -->
+        <div class="admin-panel" id="tab-settings">
+          <div class="field">
+            <label>Changer le mot de passe</label>
+            <input type="password" id="new-pw" placeholder="Nouveau mot de passe">
+          </div>
+          <div class="field">
+            <label>Confirmer</label>
+            <input type="password" id="confirm-pw" placeholder="Confirmer le mot de passe">
+          </div>
+          <div class="btn-row">
+            <button class="btn btn-primary" onclick="changePw()">Mettre à jour</button>
+          </div>
+          <hr style="border:none;border-top:0.5px solid var(--gris-clair);margin:2rem 0;">
+          <div style="display:flex;justify-content:flex-end;">
+            <button class="btn btn-secondary" onclick="logout()"><i class="fa fa-sign-out-alt" style="margin-right:6px;"></i>Déconnexion</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE READER MODAL -->
+<div class="modal-overlay" id="readerModal">
+  <div class="modal" style="max-width:860px;">
+    <div class="modal-header">
+      <h2>Article</h2>
+      <button class="modal-close" onclick="closeModal('readerModal')"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="article-reader" id="article-reader-content"></div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
