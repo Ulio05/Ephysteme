@@ -3,406 +3,491 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Éphystème — Accompagner & Transformer</title>
+  <title>Éphystème — Cabinet de psychologie du travail</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ============================================================
+<!-- ══════════════════════════════
      NAV
-     ============================================================ -->
-<nav id="main-nav">
+══════════════════════════════ -->
+<nav id="site-nav">
   <div class="nav-inner">
 
-    <!-- Logo -->
-    <a href="#presentation" class="logo">
-      <span class="logo-name">Éphystème</span>
-      <span class="logo-sub">Accompagner & Transformer</span>
+    <a href="#presentation" class="nav-logo">
+      <span class="name">Éphystème</span>
+      <span class="sub">Accompagner &amp; Transformer</span>
     </a>
 
-    <!-- Tagline -->
-    <p class="nav-tagline">
-      ÉPHYSTÈME : Accompagner et transformer pour prévenir et sortir des situations de crise au travail
-    </p>
-
-    <!-- Liens -->
+    <!-- Desktop links -->
     <ul class="nav-links">
-      <li><a href="#presentation">Cabinet</a></li>
+      <li>
+        <a href="#presentation">Cabinet <span class="chev">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="#presentation">Présentation</a>
+          <a href="#infos-legales">Informations légales</a>
+          <a href="#parcours">Parcours</a>
+        </div>
+      </li>
       <li><a href="#particuliers">Particuliers</a></li>
       <li><a href="#entreprises">Entreprise</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <!-- Hamburger -->
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
 
   </div>
 </nav>
 
+<!-- Mobile menu -->
+<nav class="nav-mobile" id="nav-mobile">
+  <span class="mob-cat">Cabinet</span>
+  <a href="#presentation" class="mob-sub">Présentation</a>
+  <a href="#infos-legales" class="mob-sub">Informations légales</a>
+  <a href="#parcours" class="mob-sub">Parcours</a>
+  <a href="#particuliers">Particuliers</a>
+  <a href="#entreprises">Entreprise</a>
+  <a href="#tarifs">Tarifs</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<!-- ============================================================
+
+<!-- ══════════════════════════════
      PRÉSENTATION
-     ============================================================ -->
+══════════════════════════════ -->
 <section id="presentation">
-  <div class="container">
-    <div>
+  <div class="wrap">
+    <div class="pres-grid">
 
-      <div class="presentation-text">
-        <p class="section-label">Cabinet de psychologie du travail</p>
-        <h2 class="section-title">Présentation</h2>
+      <div class="pres-text">
+        <span class="section-layout">Cabinet de psychologie du travail</span>
+        <h2 class="s-title">Présentation</h2>
         <div class="divider"></div>
 
-        <p>
-          Le cabinet <strong>ÉPHYSTÈME</strong> mobilise les sciences du travail comme le droit, et
-          la sociologie et surtout la psychologie du travail dont les cliniques du travail, afin de
-          produire des analyses fines des situations que ce soit dans le cadre d'accompagnements
-          individuelles ou d'interventions au sein d'organisation du travail.
+        <p><strong>ÉPHYSTÈME</strong> (contraction d'Efficacité et de Système) est un cabinet spécialisé dans l'analyse des situations de travail, fondé par <strong>Danielle CARDIS</strong>.</p>
+
+        <p>L'approche d'ÉPHYSTÈME repose sur une hypothèse fondamentale : une situation de travail ne se comprend pas à partir d'un seul registre disciplinaire. Son analyse émerge de l'interaction entre le cadre légal, le cadre normatif, le fonctionnement réel de l'activité et les discours qui la construisent.</p>
+
+        <p><em>C'est précisément cette interaction — et surtout les écarts entre ces 3 registres — que l'expertise d'ÉPHYSTÈME met en lumière.</em></p>
+
+        <div class="pres-registres">
+
+          <div class="registre">
+            <span class="registre-num">1 — Le cadre légal et organisationnel</span>
+            <h3>Les règles qui régissent le travail</h3>
+            <ul>
+              <li>Respect des obligations légales applicables (Code du travail, conventions collectives, jurisprudence).</li>
+              <li>Cartographie des acteurs institutionnels (CSE, inspection du travail, médecine du travail).</li>
+              <li>Analyse des documents juridiques (statuts, notes de service, règlements intérieurs, fiche de poste, DUER…).</li>
+            </ul>
+          </div>
+
+          <div class="registre">
+            <span class="registre-num">2 — Les sciences du travail</span>
+            <h3>Ce qui se joue effectivement dans le travail</h3>
+            <ul>
+              <li>Analyse des conditions de travail réelles : charge, autonomie, soutenabilité, collectif de travail, contradictions entre prescrit et réel.</li>
+              <li>Repérage des stratégies de défense collectives et individuelles.</li>
+              <li>Évaluation de l'impact sur la santé (physique, psychique, sociale).</li>
+            </ul>
+          </div>
+
+          <div class="registre">
+            <span class="registre-num">3 — Clinique du langage</span>
+            <h3>Ce qui est dit, comment c'est dit, et ce qui ne se dit pas</h3>
+            <ul>
+              <li>Analyse des énoncés produits sur le travail : courriels, notes de service, comptes rendus d'entretiens, évaluations, discours managériaux.</li>
+              <li>Repérage des stratégies rhétoriques : reformulations qui individualisent un problème collectif, euphémisations, déplacements de causalité, naturalisation, légitimation par la performance.</li>
+              <li>Analyse des silences et des non-dits : ce qui n'est pas dit est un signal. La clinique du langage révèle comment le discours construit masque ou neutralise la réalité du travail.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="pres-conclusion">
+          C'est pourquoi, chez ÉPHYSTÈME, nous refusons les interventions se limitant à des questionnaires qui ne permettent pas d'accéder aux enjeux réels du travail et préférons nous appuyer sur des entretiens individuels et/ou collectifs.
         </p>
-        <p>
-          Ce préalable permet d'aborder des situations de travail de façon systémique pour un
-          accompagnement efficace soutenant leur transformation.
-        </p>
-        <p>
-            <a href="#contact" class="presentation-contact">Me Contacter</a>
-        </p>
+
       </div>
+
     </div>
   </div>
 </section>
 
 
-<!-- ============================================================
+<!-- ══════════════════════════════
+     INFORMATIONS LÉGALES
+══════════════════════════════ -->
+<section id="infos-legales" class="bg-creme">
+  <div class="wrap">
+    <h2 class="s-title" style="padding-top: 1.8rem;">Informations légales</h2>
+    <div class="divider"></div>
+
+    <div class="legal-grid">
+
+      <div class="legal-row">
+        <div class="legal-key">Raison sociale</div>
+        <div class="legal-val">Cabinet Éphystème</div>
+      </div>
+
+      <div class="legal-row">
+        <div class="legal-key">Code APE / NAF 2025</div>
+        <div class="legal-val">Activité des psychologues et psychothérapeutes à l'exception des médecins</div>
+      </div>
+
+      <div class="legal-row">
+        <div class="legal-key">SIRET</div>
+        <div class="legal-val">99386746400014</div>
+      </div>
+
+      <div class="legal-row">
+        <div class="legal-key">Numéro RPPS</div>
+        <div class="legal-val">10009918094</div>
+      </div>
+
+      <div class="legal-row">
+        <div class="legal-key"><strong>IPRP</strong></div>
+        <div class="legal-val">Intervenante en Prévention des Risques Professionnels auprès de la DRIEETS AURA (Direction Régionale Interdépartementale de l'Économie, de l'Emploi du Travail et des Solidarités Auvergne-Rhône-Alpes)</div>
+      </div>
+
+      <div class="legal-row">
+        <div class="legal-key">Organisme de formation</div>
+        <div class="legal-val">Exonéré de TVA — n° 84381060938</div>
+      </div>
+
+      <div class="legal-row">
+        <div class="legal-key">Assurance RC professionnelle</div>
+        <div class="legal-val">Souscrite</div>
+      </div>
+
+      <div class="legal-row">
+        <div class="legal-key">Conformité RGPD</div>
+        <div class="legal-val">Respectée — vos données personnelles sont traitées dans le strict respect du Règlement Général sur la Protection des Données (RGPD, UE 2016/679) et protégées par chiffrement de bout en bout.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
      PARCOURS
-     ============================================================ -->
+══════════════════════════════ -->
 <section id="parcours">
-  <div class="container">
-    <div class="parcours-grid">
+  <div class="wrap">
+    <span class="s-label">Psychologue du travail</span>
+    <h2 class="s-title">Danielle CARDIS — Parcours</h2>
+    <div class="divider"></div>
 
-      <!-- Photo -->
-      <div class="parcours-photo-placeholder">
-        <span>É</span>
-      </div>
+    <div class="parc-grid">
 
-      <!-- Texte -->
-      <div class="parcours-text">
-        <p class="section-label">Psychologue du travail</p>
-        <h2 class="section-title">Danielle CARDIS — Parcours</h2>
-        <div class="divider"></div>
+      <div class="parc-photo-ph"><span>É</span></div>
 
-        <p>
-          Après une maîtrise en droit (M1) <strong>Danielle CARDIS</strong> est devenue ingénieur
-          en informatique au sein d'une SSII en région parisienne. Cette expérience a été l'occasion
-          d'amorcer une réflexion sur le sens du travail et le projet de construire un parcours
-          professionnel en adéquation avec ses valeurs et ses projets personnels.
-        </p>
-        <p>
-          Elle a profité d'un congé parental pour valider un Master 2 « chef de projet multimédia »
-          (UGA-INP Grenoble) puis devenir enseignante.
-        </p>
-        <p>
-          Une reprise d'étude en parallèle de son activité professionnelle (licence de psychologie à
-          Lyon 2 puis master en psychologie du travail au Conservatoire des Arts et Métiers) lui a
-          permis de valider le titre de psychologue.
-        </p>
-        <p>
-          Depuis elle exerce le métier de psychologue du travail au sein du cabinet <strong>ÉPHYSTÈME</strong>.
-        </p>
+      <div class="parc-text">
+        <p>Après une maîtrise en droit (M1) <strong>Danielle CARDIS</strong> est devenue ingénieur en informatique au sein d'une SSII en région parisienne. Cette expérience a été l'occasion d'amorcer une réflexion sur le sens du travail et le projet de construire un parcours professionnel en adéquation avec ses valeurs et ses projets personnels.</p>
+        <p>Elle a profité d'un congé parental pour valider un Master 2 « chef de projet multimédia » (UGA-INP Grenoble) puis devenir enseignante.</p>
+        <p>Une reprise d'étude en parallèle de son activité professionnelle (licence de psychologie à Lyon 2 puis master en psychologie du travail au Conservatoire des Arts et Métiers) lui a permis de valider le titre de psychologue. Depuis elle exerce le métier de psychologue du travail au sein du cabinet <strong>ÉPHYSTÈME</strong>.</p>
+        <p><strong>Numéro RPPS :</strong> 10009918094 — <strong>IPRP</strong> auprès de la DRIEETS AURA — Organisme de formation exonéré de TVA : 84381060938</p>
 
-        <div class="parcours-meta">
-          <span><strong>Numéro RPPS :</strong> 10009918094</span>
-          <span>
-            IPRP (Intervenante en Prévention des Risques Professionnels) auprès de la DRIEETS
-            (Direction Régionale Interdépartementale de l'Économie, de l'Emploi du Travail et des
-            Solidarités) AURA
-          </span>
-          <span><strong>Organisme de formation exonéré de TVA :</strong> 84381060938</span>
+        <!-- Conférences -->
+        <h3 class="parc-sub">Conférences et soirées</h3>
+        <div class="parc-event-list">
+          <div class="parc-event">
+            <span class="parc-event-date">Mars 2026</span>
+            <span class="parc-event-text">Participation à la conférence : <em>« Être victime de son travail — les exigences managériales contemporaines et les effets sur l'activité des salariés »</em>, 78ᵉ soirée d'échanges cliniques de l'APCOF, GHU Sainte-Anne, Paris.</span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">21 nov. 2024</span>
+            <span class="parc-event-text">Organisation d'une soirée à Lyon sur <em>« Les cliniciens du travail et la nécessaire adaptation au réel du terrain : comment "malgré tout" pratiquer une clinique du travail vivante en intervention ? »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">7 mars 2025</span>
+            <span class="parc-event-text">Préparation et animation d'une soirée à Metz sur <em>« Le travail de demain »</em>.</span>
+          </div>
         </div>
+
+        <!-- Médias -->
+        <h3 class="parc-sub">Médias</h3>
+        <div class="parc-event-list">
+          <div class="parc-event">
+            <span class="parc-event-date">28 fév. 2026</span>
+            <span class="parc-event-text"><em>L'Humanité</em> — <em>« Réunions en entreprise : trop en faire peut tuer le collectif »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">17 jan. 2026</span>
+            <span class="parc-event-text"><em>L'Humanité</em> — <em>« Changement d'emploi, stress, salaire… Peut-on vraiment prendre de bonnes résolutions au travail ? »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">30 août 2025</span>
+            <span class="parc-event-text"><em>L'Humanité</em> — <em>« Souffrance au travail : attention aux charlatans ! »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">Juin 2025</span>
+            <span class="parc-event-text">Interview dans <em>La Vie en Bleu</em> CFTC (n°17) — <em>« Le consensus n'éloigne pas le conflit »</em> : comment favoriser la prise de parole des salariés sur leur travail.</span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">24 oct. 2025</span>
+            <span class="parc-event-text"><em>SMART JOB</em>, émission Bsmart TV — <em>« Comment prévenir les déviances comportementales au travail ? »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">Podcast</span>
+            <span class="parc-event-text"><em>Le Psy du Travail</em>, invitée — Épisode #06 : <em>« Autour du métier de psychologue du travail »</em> / Épisode #21 : <em>« Psychiatres, psychologues, patatothérapeutes »</em></span>
+          </div>
+        </div>
+
+        <!-- Webinaires -->
+        <h3 class="parc-sub">Webinaires</h3>
+        <div class="parc-event-list">
+          <div class="parc-event">
+            <span class="parc-event-date">4 nov. 2025</span>
+            <span class="parc-event-text">Organisation et animation — <em>« Le harcèlement moral au travail »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">17 juin 2025</span>
+            <span class="parc-event-text">Organisation — <em>« L'accompagnement des professionnels en situation d'épuisement »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">16 avr. 2025</span>
+            <span class="parc-event-text">Organisation et animation — <em>« L'enquête interne »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">7 oct. 2024</span>
+            <span class="parc-event-text">Organisation et animation — <em>« Le marché de la souffrance au travail »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">21 mai 2024</span>
+            <span class="parc-event-text">Organisation et animation — <em>« Repères pour l'entretien clinique sur le travail »</em></span>
+          </div>
+          <div class="parc-event">
+            <span class="parc-event-date">8 avr. 2024</span>
+            <span class="parc-event-text">Organisation — <em>« Les interventions en santé au travail dans les collectivités territoriales »</em></span>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     PARTICULIERS
+══════════════════════════════ -->
+<section id="particuliers" class="bg-creme">
+  <div class="wrap">
+    <span class="s-label">Pour les individus</span>
+    <h2 class="s-title">Particuliers</h2>
+    <div class="divider"></div>
+
+    <div class="acc-group">
+
+      <p class="acc-cat">Consultations individuelles</p>
+
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Épuisement professionnel &amp; souffrance au travail</summary>
+        <div class="acc-body">
+          <p>En tant que psychologue du travail, je vous accompagne pour identifier les origines de votre souffrance dans le cadre de votre environnement professionnel. L'objectif de nos échanges sera de développer ensemble des ressources psychosociales et de trouver des voies de dégagement.</p>
+
+          <h4>Les entretiens visent à :</h4>
+          <ul>
+            <li>Restituer l'histoire professionnelle : parcours, évolution du poste, transformations organisationnelles, événements déclencheurs</li>
+            <li>Comprendre ce qui se joue : quels facteurs organisationnels, relationnels, ou de reconnaissance contribuent à votre épuisement</li>
+            <li>Caractériser les facteurs de risque psychosocial présents dans votre situation : intensité et temps de travail, autonomie décisionnelle, rapports sociaux au travail, conflits de valeurs, insécurité de la situation de travail</li>
+            <li>Croiser l'analyse clinique avec le cadre normatif : obligation de sécurité de l'employeur (articles L. 4121-1 et L. 4121-2 du Code du travail), DUERP, préconisations de la médecine du travail</li>
+            <li>Reconstruire une stratégie : que demander, à qui, comment, et avec quels arguments</li>
+          </ul>
+
+          <h4>Indications</h4>
+          <p>Cet accompagnement s'adresse aux personnes :</p>
+          <ul>
+            <li>Présentant des signes d'épuisement professionnel persistants (asthénie, troubles du sommeil, anxiété anticipatoire, cynisme, retrait relationnel…)</li>
+            <li>En arrêt de travail pour souffrance liée à leur environnement professionnel</li>
+            <li>Dont l'état de santé se dégrade et qui s'interrogent sur le lien avec leur situation de travail</li>
+            <li>Souhaitant étayer leur réflexion préalablement à toute prise de décision et/ou démarche</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Managers, cadres et dirigeants soumis à de fortes responsabilités</summary>
+        <div class="acc-body">
+          <p>Accompagnement spécifique des managers, cadres et dirigeants soumis à de fortes responsabilités et à des environnements complexes. Travail sur les tensions entre exigences organisationnelles et valeurs professionnelles.</p>
+        </div>
+      </details>
+
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Élaboration de l'expérience professionnelle</summary>
+        <div class="acc-body">
+          <p>Mise en sens du vécu professionnel, identification des ressources et des compétences développées au cours du parcours. Un espace pour comprendre son histoire de travail et en faire un levier de construction.</p>
+        </div>
+      </details>
+
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Développement professionnel</summary>
+        <div class="acc-body">
+          <p>Accompagnement à la réorientation, la transition professionnelle ou la construction d'un projet de carrière en cohérence avec ses valeurs et aspirations personnelles.</p>
+        </div>
+      </details>
+
+      <p class="acc-cat">Analyses écrites</p>
+
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Évaluation de la souffrance individuelle au travail</summary>
+        <div class="acc-body">
+          <p>Rédaction d'un bilan écrit circonstancié analysant la situation de souffrance dans sa dimension clinique, organisationnelle et juridique. Document utilisable dans le cadre de démarches de reconnaissance ou de médiation.</p>
+        </div>
+      </details>
+
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Évaluation de la situation de travail</summary>
+        <div class="acc-body">
+          <p>Analyse approfondie en appui à une demande de reconnaissance de maladie professionnelle. Évaluation des conditions de travail, des facteurs de risques et de leur incidence sur la santé du salarié.</p>
+        </div>
+      </details>
+
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Analyse de documents liés à la situation de travail</summary>
+        <div class="acc-body">
+          <p>Examen analytique de documents professionnels : évaluation, D.U.E.R partie R.P.S, statuts, règlement intérieur, diagnostic ou enquête. Lecture croisée permettant d'objectiver les risques et d'identifier les points de droit ou de contradiction.</p>
+        </div>
+      </details>
 
     </div>
   </div>
 </section>
 
 
-<!-- ============================================================
-     PARTICULIERS
-     ============================================================ -->
-<section id="particuliers">
-  <div class="container">
-    <p class="section-label">Pour les individus</p>
-    <h2 class="section-title">Particuliers</h2>
-    <div class="divider"></div>
-
-    <div class="accordion-group">
-
-      <!-- ─── CONSULTATIONS INDIVIDUELLES ─── -->
-      <p class="accordion-section-label">Consultations individuelles</p>
-
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Épuisement professionnel &amp; souffrance au travail
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Stress, problèmes relationnels, perte de sens, harcèlement… Chaque situation est accueillie dans un espace confidentiel et bienveillant. L'objectif est d'analyser ensemble les ressorts de la souffrance vécue et d'engager un travail de transformation durable.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Managers, cadres et dirigeants
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Accompagnement spécifique des managers, cadres et dirigeants soumis à de fortes responsabilités et à des environnements complexes. Travail sur les tensions entre exigences organisationnelles et valeurs professionnelles.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Élaboration de l'expérience professionnelle
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Mise en sens du vécu professionnel, identification des ressources et des compétences développées au cours du parcours. Un espace pour comprendre son histoire de travail et en faire un levier de construction.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Développement professionnel
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Accompagnement à la réorientation, la transition professionnelle, la montée en responsabilité ou la construction d'un projet de carrière en cohérence avec ses valeurs et aspirations personnelles.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ─── ANALYSES ÉCRITES ─── -->
-      <p class="accordion-section-label">Analyses écrites</p>
-
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Évaluation de la souffrance individuelle au travail
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Rédaction d'un bilan écrit circonstancié analysant la situation de souffrance dans sa dimension clinique, organisationnelle et juridique. Document utilisable dans le cadre de démarches de reconnaissance ou de médiation.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Évaluation de la situation de travail
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Analyse approfondie en appui à une demande de reconnaissance de maladie professionnelle. Évaluation des conditions de travail, des facteurs de risques et de leur incidence sur la santé du salarié.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Analyse de documents liés à la situation de travail
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Examen analytique de documents professionnels : évaluation, D.U.E.R partie R.P.S, statuts, règlement intérieur, diagnostic ou enquête. Lecture croisée permettant d'objectiver les risques et d'identifier les points de droit ou de contradiction.</p>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- / accordion-group -->
-  </div>
-</section>
-
-
-<!-- ============================================================
+<!-- ══════════════════════════════
      ENTREPRISES
-     ============================================================ -->
+══════════════════════════════ -->
 <section id="entreprises">
-  <div class="container">
-    <p class="section-label">Pour les organisations</p>
-    <h2 class="section-title">Entreprises</h2>
+  <div class="wrap">
+    <span class="s-label">Pour les organisations</span>
+    <h2 class="s-title">Entreprises</h2>
     <div class="divider"></div>
 
-    <div class="accordion-group">
+    <div class="acc-group">
 
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Diagnostic psycho-organisationnel
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Analyse globale du fonctionnement de l'organisation : culture, management, relations de travail, risques psychosociaux. Le diagnostic permet d'identifier les tensions structurelles et de construire un plan d'action adapté.</p>
-          </div>
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Diagnostic psycho-organisationnel</summary>
+        <div class="acc-body">
+          <p>Analyse globale du fonctionnement de l'organisation : culture, management, relations de travail, risques psychosociaux. Le diagnostic permet d'identifier les tensions structurelles et de construire un plan d'action adapté.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Analyse écrite de documents
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Lecture et analyse critique de documents organisationnels : évaluation, D.U.E.R partie R.P.S, diagnostic ou enquête. Production d'un rapport circonstancié avec recommandations opérationnelles.</p>
-          </div>
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Analyse écrite de documents (évaluation, D.U.E.R partie R.P.S, diagnostic ou enquête)</summary>
+        <div class="acc-body">
+          <p>Lecture et analyse critique de documents organisationnels. Production d'un rapport circonstancié avec recommandations opérationnelles.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Accompagnement des équipes et du management en situation de crise
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Intervention rapide auprès des équipes et encadrants en situation de crise (conflits aigus, événements traumatiques, burn-out collectif…). Restauration du dialogue, soutien psychologique et rétablissement des conditions d'un travail sain.</p>
-          </div>
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Accompagnement des équipes et du management en situation de crise</summary>
+        <div class="acc-body">
+          <p>Intervention rapide auprès des équipes et encadrants en situation de crise (conflits aigus, événements traumatiques, burn-out collectif…). Restauration du dialogue et rétablissement des conditions d'un travail sain.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Accompagnement des transformations organisationnelles
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Soutien aux organisations traversant des changements majeurs : restructurations, fusions, évolutions managériales. Un accompagnement centré sur le maintien de la qualité de vie au travail et la préservation du collectif.</p>
-          </div>
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Accompagnement des transformations organisationnelles</summary>
+        <div class="acc-body">
+          <p>Soutien aux organisations traversant des changements majeurs : restructurations, fusions, évolutions managériales. Un accompagnement centré sur le maintien de la qualité de vie au travail et la préservation du collectif.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Formations / Sensibilisations
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Modules de formation sur la souffrance au travail, les RPS, le D.U.E.R, etc. Interventions adaptées à vos équipes RH, managers ou instances représentatives du personnel (IRP). Format intra ou inter-entreprise.</p>
-          </div>
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Formations / Sensibilisations (souffrance au travail, RPS, DUER, etc.)</summary>
+        <div class="acc-body">
+          <p>Modules de formation sur la souffrance au travail, les RPS, le D.U.E.R. Interventions adaptées à vos équipes RH, managers ou instances représentatives du personnel. Format intra ou inter-entreprise.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Prévention des risques psychosociaux et amélioration des conditions de travail
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Accompagnement des organisations souhaitant développer une démarche structurée de prévention des RPS : cartographie des risques, plan de prévention, suivi et évaluation des actions mises en place.</p>
-          </div>
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Prévention des risques psychosociaux et amélioration des conditions de travail</summary>
+        <div class="acc-body">
+          <p>Accompagnement des organisations souhaitant développer une démarche structurée de prévention des RPS : cartographie des risques, plan de prévention, suivi et évaluation des actions mises en place.</p>
         </div>
-      </div>
+      </details>
 
-      <div class="accordion-item">
-        <button class="accordion-trigger" onclick="toggleAccordion(this)">
-          <span class="accordion-arrow">
-            <svg viewBox="0 0 8 8"><polygon points="2,1 7,4 2,7"/></svg>
-          </span>
-          Supervision d'équipe ou de comité de direction
-        </button>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p>Espace régulier de réflexivité collective pour les équipes et comités de direction. Analyse des pratiques professionnelles, régulation des dynamiques relationnelles et soutien au développement du leadership.</p>
-          </div>
+      <details class="acc">
+        <summary><i class="acc-arrow">▶</i>Supervision d'équipe ou de comité de direction</summary>
+        <div class="acc-body">
+          <p>Espace régulier de réflexivité collective pour les équipes et comités de direction. Analyse des pratiques professionnelles et soutien au développement du leadership.</p>
         </div>
-      </div>
+      </details>
 
-    </div><!-- / accordion-group -->
+    </div>
   </div>
 </section>
 
 
-<!-- ============================================================
+<!-- ══════════════════════════════
      TARIFS
-     ============================================================ -->
-<section id="tarifs">
-  <div class="container">
-    <p class="section-label">Honoraires</p>
-    <h2 class="section-title">Tarifs</h2>
+══════════════════════════════ -->
+<section id="tarifs" class="bg-creme">
+  <div class="wrap">
+    <span class="s-label">Honoraires</span>
+    <h2 class="s-title">Tarifs</h2>
     <div class="divider"></div>
 
     <div class="tarifs-grid">
 
-      <!-- Consultations -->
       <div class="tarif-card">
-        <p class="tarif-label">Consultations individuelles</p>
-        <p class="tarif-price">85 €</p>
-        <p class="tarif-unit">les 45 minutes</p>
-        <div class="tarif-notes">
-          <p class="tarif-note-item">Non remboursées par la sécurité sociale</p>
-          <p class="tarif-note-item">Une facture est remise à l'issue de chaque consultation</p>
-          <p class="tarif-note-item">Certaines mutuelles participent à leur prise en charge</p>
+        <span class="t-label">Consultations individuelles</span>
+        <div class="t-price-group">
+          <div class="t-price-row">
+            <span class="t-price">85 €</span>
+            <span class="t-unit">les 45 min</span>
+          </div>
+          <div class="t-price-row">
+            <span class="t-price">160 €</span>
+            <span class="t-unit">les 90 min</span>
+          </div>
         </div>
+        <ul class="t-notes">
+          <li>Non remboursées par la sécurité sociale</li>
+          <li>Une facture remise à l'issue de chaque consultation</li>
+          <li>Certaines mutuelles participent à leur prise en charge</li>
+          <li class="warn">Toute consultation décommandée moins de 48 h ouvrées avant le rendez-vous reste due</li>
+        </ul>
       </div>
 
-      <!-- Analyses -->
       <div class="tarif-card">
-        <p class="tarif-label">Analyse écrite — Particuliers</p>
-        <p class="tarif-price">150 €</p>
-        <p class="tarif-unit">taux horaire, TVA comprise</p>
-        <div class="tarif-notes">
-          <p class="tarif-note-item">Tarification au temps passé</p>
-          <p class="tarif-note-item">Devis établi après échange préalable</p>
-          <p class="tarif-note-item">Organisme de formation exonéré de TVA n°84381060938</p>
+        <span class="t-label">Analyse écrite — Particuliers</span>
+        <div class="t-price-group">
+          <div class="t-price-row">
+            <span class="t-price">150 €</span>
+            <span class="t-unit">taux horaire, TVA comprise</span>
+          </div>
         </div>
+        <ul class="t-notes">
+          <li>Tarification au temps passé</li>
+          <li>Devis établi après échange préalable</li>
+          <li>Organisme de formation exonéré de TVA n° 84381060938</li>
+        </ul>
       </div>
 
-      <!-- Entreprises CTA -->
-      <div class="tarif-card cta">
-        <p class="tarif-label">Prestations entreprises</p>
-        <p class="tarif-price" style="font-size:1.3rem; margin-top:0.5rem;">Sur devis</p>
-        <p class="tarif-unit">selon la nature et la durée de la mission</p>
-        <div class="tarif-notes">
-          <p class="tarif-note-item">Interventions adaptées à votre organisation</p>
-          <p class="tarif-note-item">Devis gratuit et sans engagement</p>
+      <div class="tarif-card dark">
+        <span class="t-label">Prestations entreprises</span>
+        <div class="t-price-group">
+          <div class="t-price-row">
+            <span class="t-price">Sur devis</span>
+          </div>
         </div>
-        <a href="#contact" class="tarif-cta-btn">Me contacter</a>
+        <span class="t-unit">selon la nature et la durée de la mission</span>
+        <ul class="t-notes">
+          <li>Interventions adaptées à votre organisation</li>
+          <li>Devis gratuit et sans engagement</li>
+        </ul>
+        <a href="#contact" class="t-btn">Nous contacter</a>
       </div>
 
     </div>
@@ -410,26 +495,23 @@
 </section>
 
 
-<!-- ============================================================
+<!-- ══════════════════════════════
      CONTACT
-     ============================================================ -->
+══════════════════════════════ -->
 <section id="contact">
-  <div class="container">
-    <p class="section-label" style="color:rgba(200,168,75,0.8);">Échanger</p>
-    <h2 class="section-title">Contact</h2>
+  <div class="wrap">
+    <span class="s-label" style="color:rgba(200,168,75,.8);">Échanger</span>
+    <h2 class="s-title" style="color:#fff;">Contact</h2>
     <div class="divider"></div>
 
     <div class="contact-grid">
 
       <div>
-        <p class="contact-intro">
-          Vous souhaitez en savoir plus sur les services proposés, prendre rendez-vous ou obtenir un
-          devis pour votre organisation ? N'hésitez pas à me contacter.
-        </p>
+        <p class="contact-intro">Vous souhaitez en savoir plus sur les services proposés, prendre rendez-vous ou obtenir un devis pour votre organisation ? N'hésitez pas à me contacter.</p>
         <div class="contact-info">
           <div class="contact-info-item">
             <i class="fa fa-envelope"></i>
-            <span>contact@ephysteme.fr</span>
+            <span>danielle.cardis@ephysteme.fr</span>
           </div>
           <div class="contact-info-item">
             <i class="fa fa-phone"></i>
@@ -446,7 +528,7 @@
         <input type="text"  placeholder="Votre nom" required>
         <input type="email" placeholder="Votre adresse e-mail" required>
         <input type="text"  placeholder="Objet">
-        <textarea rows="5" placeholder="Votre message…"></textarea>
+        <textarea rows="5"  placeholder="Votre message…"></textarea>
         <button type="submit">Envoyer le message</button>
       </form>
 
@@ -455,63 +537,60 @@
 </section>
 
 
-<!-- ============================================================
+<!-- ══════════════════════════════
      FOOTER
-     ============================================================ -->
-<footer>
-  <div class="footer-inner">
-    <p>© 2025 Éphystème — Tous droits réservés</p>
-    <a href="#presentation">↑ Haut de page</a>
-  </div>
+══════════════════════════════ -->
+<footer id="site-footer">
+  <p>© 2026 Éphystème — Tous droits réservés</p>
+  <a href="#presentation">↑ Haut de page</a>
 </footer>
 
 
-<!-- ============================================================
-     JS
-     ============================================================ -->
 <script>
-  /* ── Accordion ── */
-  function toggleAccordion(btn) {
-    const body  = btn.nextElementSibling;
-    const isOpen = btn.classList.contains('open');
+  alert("Ce ite est encore sous construction")
+  /* ── Hamburger ── */
+  var hamburger = document.getElementById('hamburger');
+  var navMobile = document.getElementById('nav-mobile');
 
-    /* Ferme tous les ouverts */
-    document.querySelectorAll('.accordion-trigger.open').forEach(b => {
-      b.classList.remove('open');
-      b.nextElementSibling.classList.remove('open');
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('open');
+    navMobile.classList.toggle('open');
+  });
+
+  navMobile.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('open');
     });
+  });
 
-    /* Ouvre celui cliqué (si pas déjà ouvert) */
-    if (!isOpen) {
-      btn.classList.add('open');
-      body.classList.add('open');
-    }
-  }
-
-  /* ── Nav active link on scroll ── */
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks  = document.querySelectorAll('.nav-links a');
+  /* ── Nav active on scroll ── */
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks  = document.querySelectorAll('.nav-links > li > a');
 
   function onScroll() {
-    let current = '';
-    sections.forEach(s => {
+    var current = '';
+    sections.forEach(function (s) {
       if (window.scrollY >= s.offsetTop - 100) current = s.id;
     });
-    navLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    navLinks.forEach(function (a) {
+      var href = a.getAttribute('href');
+      a.classList.toggle('active',
+        href === '#' + current ||
+        (href === '#presentation' && ['presentation','infos-legales','parcours'].indexOf(current) !== -1)
+      );
     });
   }
-
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ── Contact form ── */
+  /* ── Formulaire contact ── */
   function handleContact(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('button');
+    var btn = e.target.querySelector('button');
     btn.textContent = 'Message envoyé ✓';
     btn.style.background = '#2e6b45';
-    setTimeout(() => {
+    setTimeout(function () {
       btn.textContent = 'Envoyer le message';
       btn.style.background = '';
       e.target.reset();
