@@ -57,12 +57,13 @@ ul { list-style:none; }
 .nav-logo { display:flex; flex-direction:column; line-height:1.15; flex-shrink:0; }
 .nav-logo .name {
   font-family: var(--serif);
-  font-size: 1rem; font-weight:600;
+  font-size: 1.7rem; font-weight:600;
   color: var(--marine); letter-spacing:0.06em; text-transform:uppercase;
 }
 .nav-logo .sub {
   font-size: 0.54rem; color:var(--or);
   letter-spacing:0.18em; text-transform:uppercase;
+  font-weight: bold;
 }
 
 /* Links */
@@ -285,7 +286,7 @@ section { scroll-margin-top: var(--nav-h); }
 
 .legal-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 3fr;
   gap: 0;
   border: 1px solid var(--gris-clair);
   border-radius:2px;
@@ -345,8 +346,7 @@ section { scroll-margin-top: var(--nav-h); }
 
 .parc-event-list { display:flex; flex-direction:column; gap:0.9rem; margin-bottom:1rem; }
 .parc-event {
-  display:grid; grid-template-columns:auto 1fr;
-  gap:0 1rem; align-items:baseline;
+  display:grid;   grid-template-columns: 1fr 9fr;  gap:0 1rem; align-items:baseline;
 }
 .parc-event-date {
   font-size:0.72rem; letter-spacing:0.08em;
