@@ -213,6 +213,7 @@ section { scroll-margin-top: var(--nav-h); }
   width:40px; height:2px;
   background:var(--or); margin:1rem 0 1.8rem;
 }
+
 .s-intro {
   font-size: 0.9rem; line-height:1.9; color:var(--gris); margin-bottom:1rem;
 }
